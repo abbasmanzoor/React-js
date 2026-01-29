@@ -1,13 +1,14 @@
 import React from 'react'
 import Navbar from './Navbar'
+import Page1_content from './Page1_content'
 
 const Section1 = () => {
   return (
-    <div>
-    <div className='h-screen w-full bg-green-400'>
+    <div className='h-screen w-full '>
     <Navbar />
+    <Page1_content/>
     </div>
-    </div>)
+    )
 }
 
 export default Section1
