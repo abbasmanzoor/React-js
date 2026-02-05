@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: 'Helvetica neue', sans-serif;
+}
+html,body{
+  height: 100%; 
+  background-color: #f5f5f5;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input,button{
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ed7272;
+  border-radius: 4px;
+}
+button{
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+button:hover{
+  background-color: #45a049;      
+}
