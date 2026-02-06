@@ -1,3 +1,4 @@
+// I am practice fo two way binding
 import React, { useState } from 'react'
 
 const App = () => {
