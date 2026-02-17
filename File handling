@@ -1,0 +1,33 @@
+import React from 'react'
+
+const App = () => {
+  const submithandler=(e)=>{
+    e.preventDefault()
+    console.log("submitted");
+
+  }
+  return (
+    <div className='h-screen  bg-black text-white'>
+      <form onSubmit={(e)=>{
+        submithandler(e);
+      }} className='flex items-start justify-between  p-10'>
+
+        <div className='flex  w-1/2 gap-4 items-start   flex-col'>
+      <input
+      type='text'
+      placeholder='Enter Notes Heading'
+      className='px-5 py-2 w-full border-2 font-medium outline-none rounded'/>
+      <textarea 
+      type='text'
+      placeholder='Write Details'
+        className='px-5  py-2  w-full h-32 border-2 font-medium flex items-start outline-none rounded'/>
+        <button className='bg-white w-full outline-none font-medium text-black px-5 py-2 rounded'>Add Notes</button>  
+        </div>
+        {/* <img className="h-52 rotate-y-180" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnjG_0GyDV8sKyAcbmO4EVVjVx44iUWjVV6g&s'/> */}
+      </form>
+    </div>
+  )
+}
+
+export default App
+  
